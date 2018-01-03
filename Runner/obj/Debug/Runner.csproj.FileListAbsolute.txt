@@ -1,0 +1,13 @@
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Runner.exe.config
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Runner.exe
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Runner.pdb
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\SmartInterviewsBatch-6.dll
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\SmartInterviewsBatch-6.pdb
+C:\Users\jappapule\source\repos\SI\Runner\obj\Debug\Runner.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\Runner\obj\Debug\Runner.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\Runner\obj\Debug\Runner.exe
+C:\Users\jappapule\source\repos\SI\Runner\obj\Debug\Runner.pdb
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Hackerearth.dll
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Hackerearth.pdb
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Codeforces.dll
+C:\Users\jappapule\source\repos\SI\Runner\bin\Debug\Codeforces.pdb

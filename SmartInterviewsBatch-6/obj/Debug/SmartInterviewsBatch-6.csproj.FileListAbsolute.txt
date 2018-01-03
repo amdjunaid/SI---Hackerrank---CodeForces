@@ -1,0 +1,6 @@
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\bin\Debug\SmartInterviewsBatch-6.dll
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\bin\Debug\SmartInterviewsBatch-6.pdb
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.dll
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.pdb
+C:\Users\jappapule\source\repos\SI\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.csprojResolveAssemblyReference.cache
