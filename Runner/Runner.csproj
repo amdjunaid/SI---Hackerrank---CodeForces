@@ -57,6 +57,10 @@
       <Project>{532f892b-3ffb-486a-a86a-87fa1f51797f}</Project>
       <Name>Hackerearth</Name>
     </ProjectReference>
+    <ProjectReference Include="..\InterviewBit\InterviewBit.csproj">
+      <Project>{405a32c7-77ca-42bf-8039-ce5866bea801}</Project>
+      <Name>InterviewBit</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmartInterviewsBatch-6\SmartInterviewsBatch-6.csproj">
       <Project>{91d0aceb-6180-4c7d-92f1-7bf518dfa944}</Project>
       <Name>SmartInterviewsBatch-6</Name>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerearth", "Hackerearth\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeforces", "Codeforces\Codeforces.csproj", "{B3660A4D-2433-4A5C-A336-10840661B315}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewBit", "InterviewBit\InterviewBit.csproj", "{405A32C7-77CA-42BF-8039-CE5866BEA801}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B3660A4D-2433-4A5C-A336-10840661B315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3660A4D-2433-4A5C-A336-10840661B315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3660A4D-2433-4A5C-A336-10840661B315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405A32C7-77CA-42BF-8039-CE5866BEA801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405A32C7-77CA-42BF-8039-CE5866BEA801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405A32C7-77CA-42BF-8039-CE5866BEA801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405A32C7-77CA-42BF-8039-CE5866BEA801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

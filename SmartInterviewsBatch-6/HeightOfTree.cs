@@ -25,7 +25,7 @@ namespace SmartInterviewsBatch_6
             for (int i = 0; i < arr.Length; i++) {
                 tree.root = tree.Insert(tree.root, arr[i]);
             }
-            return tree.Height(tree.root,0);
+            return tree.Height(tree.root);
         }
     }
 }

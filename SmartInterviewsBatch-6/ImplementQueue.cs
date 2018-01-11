@@ -69,6 +69,13 @@ namespace SmartInterviewsBatch_6
             //return (f == r) && r == -1;
         }
 
+        public T Peek() {
+            if (!IsEmpty()) {
+                return _arr[f + 1];
+            }
+            return default(T);
+        }
+
         public T Dequeue()
         {
             if (!IsEmpty())

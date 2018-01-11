@@ -42,10 +42,15 @@
   <ItemGroup>
     <Compile Include="Div2\GoodBye2017\BuggyBot.cs" />
     <Compile Include="Div2\GoodBye2017\CountingCards.cs" />
+    <Compile Include="Div2\Hello2018\ChristmasSpruce.cs" />
+    <Compile Include="Div2\Hello2018\ModularExponentiation.cs" />
+    <Compile Include="Div2\Hello2018\PartyLemonade.cs" />
     <Compile Include="Div2\Round448\PizzaProblem.cs" />
     <Compile Include="Div2\Round448\Testt.cs" />
     <Compile Include="Div2\Round448\XKSegments.cs" />
     <Compile Include="Div2\Round455\PythonIntendation.cs" />
+    <Compile Include="Div2\Round456\NewYearsEve.cs" />
+    <Compile Include="Div2\Round456\TrickyAlchemy.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -67,7 +67,8 @@
     <Compile Include="ISolution.cs" />
     <Compile Include="IsCheckPowerOf2.cs" />
     <Compile Include="LargestConcatinatedNumber.cs" />
-    <Compile Include="LevelOrderOfTree.cs" />
+    <Compile Include="Trees\BottomsUpLevelOrder.cs" />
+    <Compile Include="Trees\LevelOrderOfTree.cs" />
     <Compile Include="MaximumContiguousSubsequence.cs" />
     <Compile Include="6a\MaxNoOfSetBits.cs" />
     <Compile Include="MinimumSubArray.cs" />
@@ -84,12 +85,19 @@
     <Compile Include="RectangularAreaUnderHistogram.cs" />
     <Compile Include="SumOfPairs.cs" />
     <Compile Include="TOH.cs" />
+    <Compile Include="Trees\IsBalancedTree.cs" />
+    <Compile Include="Trees\IsBST.cs" />
+    <Compile Include="Trees\IsCompleteBinaryTree.cs" />
+    <Compile Include="Trees\IsFullBinaryTree.cs" />
+    <Compile Include="Trees\LeftView.cs" />
+    <Compile Include="Trees\RightView.cs" />
+    <Compile Include="Trees\VerticalOrderOfTree.cs" />
+    <Compile Include="Trees\ZigZagBottomUpTraversal.cs" />
+    <Compile Include="Trees\ZigZagLevelOrder.cs" />
     <Compile Include="TreeTraversals.cs" />
     <Compile Include="TwoSetBits.cs" />
     <Compile Include="WordsVowelsConsonants.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

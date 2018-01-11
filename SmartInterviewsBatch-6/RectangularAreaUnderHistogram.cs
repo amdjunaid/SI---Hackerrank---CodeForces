@@ -9,7 +9,7 @@ namespace SmartInterviewsBatch_6
 {
     public class RectangularAreaUnderHistogram : ISolution
     {
-        public enum FirstMinimumDirection
+        public enum Direction
         {
             Left = 1,
             Right = -1
@@ -27,16 +27,16 @@ namespace SmartInterviewsBatch_6
         }
 
         public static short[] arr = null;
-        public static short[] fMRi = null;
-        public static short[] fMLi = null;
+        public static int[] fMRi = null;
+        public static int[] fMLi = null;
 
-        private short[] GenerateFirstMins(FirstMinimumDirection dirOfFirstMin)
+        private int[] GenerateFirstMins(Direction dirOfFirstMin)
         {
-            Stack<short> findingFirstMinimums = new Stack<short>(arr.Length);
-            short[] fMi = new short[arr.Length];
-            short i = (short)(dirOfFirstMin == FirstMinimumDirection.Left ? 0 : (arr.Length - 1));
+            Stack<int> findingFirstMinimums = new Stack<int>(arr.Length);
+            int[] fMi = new int[arr.Length];
+            int i = dirOfFirstMin == Direction.Left ? 0 : (arr.Length - 1);
 
-            for (; dirOfFirstMin == FirstMinimumDirection.Left ? i < arr.Length : i >= 0; i = (short)(dirOfFirstMin == FirstMinimumDirection.Left ? i + 1 : i - 1))
+            for (; dirOfFirstMin == Direction.Left ? i < arr.Length : i >= 0; i = (dirOfFirstMin == Direction.Left ? i + 1 : i - 1))
             {
                 if (findingFirstMinimums.IsEmpty())
                 {
@@ -45,13 +45,12 @@ namespace SmartInterviewsBatch_6
                 }
                 else
                 {
-                    short prevPoppedElement = short.MinValue;
                     bool isMinimumFound = false;
                     while (!findingFirstMinimums.IsEmpty())
                     {
                         if (arr[findingFirstMinimums.Peek()] >= arr[i])
                         {
-                            prevPoppedElement = findingFirstMinimums.Pop();
+                            findingFirstMinimums.Pop();
                         }
                         else
                         {
@@ -63,7 +62,7 @@ namespace SmartInterviewsBatch_6
                     }
                     if (!isMinimumFound)
                     {
-                        fMi[i] = prevPoppedElement != short.MinValue ? prevPoppedElement : i;
+                        fMi[i] = i;
                         findingFirstMinimums.Push(i);
                     }
                 }
@@ -71,40 +70,62 @@ namespace SmartInterviewsBatch_6
             return fMi;
         }
 
-        private int MaxRectangularArea()
+        private uint MaxRectangularArea()
         {
-            short MaxRectangularArea = short.MinValue;
+            uint MaxRectangularArea = uint.MinValue;
 
-            fMRi = GenerateFirstMins(FirstMinimumDirection.Right);
-            fMLi = GenerateFirstMins(FirstMinimumDirection.Left);
+            fMRi = GenerateFirstMins(Direction.Right);
+            fMLi = GenerateFirstMins(Direction.Left);
 
-            for (short i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                MaxRectangularArea = Math.Max(MaxRectangularArea, (short)(arr[i] * PossibleReachOnBothDirections(i)));
+                MaxRectangularArea = Math.Max(MaxRectangularArea, (uint)(arr[i] * PossibleReachOnBothDirections(i)));
             }
             return MaxRectangularArea;
         }
 
-        private short PossibleReachOnBothDirections(short i)
+        /// <summary>
+        /// Algorithm:
+        /// given the index of the current building, max possible reach on left side is first occuring min, if not found, then last occuring max or equal heighted building.
+        /// similarly, max possible reach on right side is first occuring min, if not found, last occuring max or equal heighted building..
+        /// now, if we encounter shorter on left or right side, we exclude that building when computing max reach on the respective direction.
+        /// if we do not find max on left or right side, we include that building when computing max reach on the respecive direction.
+        /// if we do not find min and max or equal heighted building on either side, then the valid answer for the building is the building itself as we cannot expand on both sides.
+        /// we apply apply above rules below and compute the answer.
+        /// (a,b] | [a,b) = b-a, [a,b] = b-a + 1, (a,b) = b-a -1
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        private int PossibleReachOnBothDirections(int i)
         {
+            int maxPossibleLeft = fMLi[i], maxPossibleRight = fMRi[i];
+            bool IsLeftMinFound = true, IsRightMinFound = true;
             if (fMLi[i] == i && fMRi[i] == i)
             {
-                return 1;
+                if (i == 0) // the only building in histogram
+                    return 1;
             }
-            else
+            if (maxPossibleLeft == i)
             {
-                short noOfBlocks = (short)Math.Abs(fMLi[i] - fMRi[i]);//b-a
-
-                if (arr[fMLi[i]] >= arr[i] && arr[fMRi[i]] >= arr[i])//b-a+1(including when mins could not be found, but found equal or greater heighted building
-                {
-                    noOfBlocks++;
-                }
-                else if (fMLi[i] != i && fMRi[i] != i)//b-a-1(excluding mins on both ends)
-                {
-                    noOfBlocks--;
-                }
-                return Math.Abs(noOfBlocks);
+                IsLeftMinFound = false;
+                maxPossibleLeft = 0;
             }
+            if (maxPossibleRight == i)
+            {
+                IsRightMinFound = false;
+                maxPossibleRight = (arr.Length - 1);
+            }
+            int noOfBlocks = Math.Abs(maxPossibleLeft - maxPossibleRight) + 1;//b-a + 1 assuming both are taller or equal to current building
+
+            if ((!IsLeftMinFound && IsRightMinFound) || (IsLeftMinFound && !IsRightMinFound))//if one of them is of a shorter height, then (a,b] or [a,b)
+            {
+                noOfBlocks--;
+            }
+            else if (IsLeftMinFound && IsRightMinFound)//if both of them are of short height, then (a,b)
+            {
+                noOfBlocks -= 2;
+            }
+            return noOfBlocks;
         }
     }
 

@@ -26,6 +26,7 @@ namespace SmartInterviewsBatch_6
             {
                 tree.root = tree.Insert(tree.root, arr[i]);
             }
+            tree.Depth(tree.root, -1);
             return tree.LevelOrder(tree.root);
         }
     }

@@ -4,3 +4,9 @@ C:\Users\jappapule\source\repos\SI\Codeforces\obj\Debug\Codeforces.csprojResolve
 C:\Users\jappapule\source\repos\SI\Codeforces\obj\Debug\Codeforces.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\Codeforces\obj\Debug\Codeforces.dll
 C:\Users\jappapule\source\repos\SI\Codeforces\obj\Debug\Codeforces.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\bin\Debug\Codeforces.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\bin\Debug\Codeforces.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\obj\Debug\Codeforces.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\obj\Debug\Codeforces.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\obj\Debug\Codeforces.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codeforces\obj\Debug\Codeforces.pdb
