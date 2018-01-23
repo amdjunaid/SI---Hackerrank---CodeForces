@@ -26,3 +26,5 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug\Runner.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug\Runner.exe
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug\Runner.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Datastructures.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Datastructures.pdb

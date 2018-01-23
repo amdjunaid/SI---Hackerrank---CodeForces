@@ -10,3 +10,5 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsB
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsBatch-6\obj\Debug\SmartInterviewsBatch-6.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsBatch-6\bin\Debug\Datastructures.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\SmartInterviewsBatch-6\bin\Debug\Datastructures.pdb

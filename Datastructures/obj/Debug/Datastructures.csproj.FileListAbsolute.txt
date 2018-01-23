@@ -1,0 +1,6 @@
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\bin\Debug\Datastructures.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\bin\Debug\Datastructures.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\obj\Debug\Datastructures.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\obj\Debug\Datastructures.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\obj\Debug\Datastructures.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Datastructures\obj\Debug\Datastructures.pdb

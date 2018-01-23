@@ -51,6 +51,7 @@
     <Compile Include="Div2\Round455\PythonIntendation.cs" />
     <Compile Include="Div2\Round456\NewYearsEve.cs" />
     <Compile Include="Div2\Round456\TrickyAlchemy.cs" />
+    <Compile Include="Div2\Round457\JamieAndAlarmSnooze.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

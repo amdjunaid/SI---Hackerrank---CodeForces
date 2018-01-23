@@ -55,6 +55,17 @@
     <Compile Include="DecemberCookOff.cs" />
     <Compile Include="DepthOfTree.cs" />
     <Compile Include="DistinctElementsInWindow.cs" />
+    <Compile Include="DynamicProgramming\ActivitySelection.cs" />
+    <Compile Include="DynamicProgramming\ArrangingDominos.cs" />
+    <Compile Include="DynamicProgramming\BinaryStringWithNoAdjacentOnes.cs" />
+    <Compile Include="DynamicProgramming\CollectingApples.cs" />
+    <Compile Include="DynamicProgramming\ComputeFactorial.cs" />
+    <Compile Include="DynamicProgramming\ComputeNCR.cs" />
+    <Compile Include="DynamicProgramming\MaximumCircularSubarraySum.cs" />
+    <Compile Include="DynamicProgramming\MaximumNonAdjacentSubsequenceSum.cs" />
+    <Compile Include="DynamicProgramming\MaxSubArraySum.cs" />
+    <Compile Include="DynamicProgramming\NumberOfDiceRolls.cs" />
+    <Compile Include="DynamicProgramming\PathInMatrix.cs" />
     <Compile Include="ExpressAsPowerOfB.cs" />
     <Compile Include="FallingFootball.cs" />
     <Compile Include="6a\FindingCeil.cs" />
@@ -67,6 +78,8 @@
     <Compile Include="ISolution.cs" />
     <Compile Include="IsCheckPowerOf2.cs" />
     <Compile Include="LargestConcatinatedNumber.cs" />
+    <Compile Include="Stacks\StockSpan.cs" />
+    <Compile Include="Strings\LargestPalindromicSubstringHard.cs" />
     <Compile Include="Trees\BottomsUpLevelOrder.cs" />
     <Compile Include="Trees\LevelOrderOfTree.cs" />
     <Compile Include="MaximumContiguousSubsequence.cs" />
@@ -98,6 +111,11 @@
     <Compile Include="TwoSetBits.cs" />
     <Compile Include="WordsVowelsConsonants.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Datastructures\Datastructures.csproj">
+      <Project>{e84f9f9b-5296-4d5e-aef1-0f919e447025}</Project>
+      <Name>Datastructures</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

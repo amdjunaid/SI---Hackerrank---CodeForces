@@ -40,12 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\MaxContiguousSubArray.cs" />
     <Compile Include="Arrays\MaxNonNegativeSubArray.cs" />
+    <Compile Include="Arrays\MinStepsInfiniteGrid.cs" />
     <Compile Include="Arrays\NobleInteger.cs" />
     <Compile Include="Arrays\PascalTriangle.cs" />
+    <Compile Include="Arrays\RepeatAndMissingNumber.cs" />
     <Compile Include="Arrays\SpiralOrderMatrix.cs" />
+    <Compile Include="Arrays\WaveArray.cs" />
+    <Compile Include="Bitwise\DifferentBitSumPairwise.cs" />
+    <Compile Include="Bitwise\NumberOf1Bits.cs" />
+    <Compile Include="Bitwise\ReverseBits.cs" />
+    <Compile Include="Bitwise\SingleNumber.cs" />
     <Compile Include="ISolution.cs" />
+    <Compile Include="Math\FizzBuzz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\AllocateBooks.cs" />
+    <Compile Include="Search\PaintersPartitionProblem.cs" />
+    <Compile Include="Search\SquareRootNumber.cs" />
+    <Compile Include="Trees\PreOrderTraversal.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
