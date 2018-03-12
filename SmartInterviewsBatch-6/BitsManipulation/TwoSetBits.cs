@@ -27,7 +27,7 @@ namespace SmartInterviewsBatch_6
                     ans.Append((APowBModM(2, r1 - 1, 1e9 + 7) + APowBModM(2, r1 - 2, 1e9 + 7)) % (1e9 + 7));
                 }
 
-                else if (n < ncr1 && n > ncr2)
+                else if (n < ncr1 && n >= ncr2)
                 {
                     ans.Append((APowBModM(2, r1 - 1, 1e9 + 7) + APowBModM(2, (long)(n - ncr2 - 1), 1e9 + 7)) % (1e9 + 7));
                 }

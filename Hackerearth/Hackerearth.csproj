@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ISolution.cs" />
+    <Compile Include="JanuaryCircuit\Road.cs" />
     <Compile Include="LinearSearch\PolicemenAndThieves.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

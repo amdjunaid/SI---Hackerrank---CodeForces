@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,9 +47,14 @@
     <Compile Include="6b\IsSubsequence.cs" />
     <Compile Include="6b\RangeOfPrimes.cs" />
     <Compile Include="6b\RangeSumSubarrays.cs" />
-    <Compile Include="BinaryRepresentation.cs" />
+    <Compile Include="6c\ContinuousHeightOfTree.cs" />
+    <Compile Include="6c\LongestSubarrayWithSumZero.cs" />
+    <Compile Include="6c\PalindromicConcatination.cs" />
+    <Compile Include="6c\RangeQueries.cs" />
+    <Compile Include="BitsManipulation\BinaryRepresentation.cs" />
     <Compile Include="6a\CheckIfPalindrome.cs" />
-    <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="Trees\BinarySearchTree.cs" />
+    <Compile Include="BitsManipulation\TwoSetBitModified.cs" />
     <Compile Include="ChangingDirectories.cs" />
     <Compile Include="CountTheTriangles.cs" />
     <Compile Include="6a\EvenSplit.cs" />
@@ -66,18 +72,24 @@
     <Compile Include="DynamicProgramming\MaxSubArraySum.cs" />
     <Compile Include="DynamicProgramming\NumberOfDiceRolls.cs" />
     <Compile Include="DynamicProgramming\PathInMatrix.cs" />
-    <Compile Include="ExpressAsPowerOfB.cs" />
+    <Compile Include="BitsManipulation\ExpressAsPowerOfB.cs" />
     <Compile Include="FallingFootball.cs" />
     <Compile Include="6a\FindingCeil.cs" />
     <Compile Include="FindingMissingNumber.cs" />
     <Compile Include="GameOfLetters.cs" />
+    <Compile Include="Graphs\Forest.cs" />
+    <Compile Include="Graphs\NumberOfConnectedComponents.cs" />
+    <Compile Include="Graphs\NumberOfIslandsEasy.cs" />
+    <Compile Include="Graphs\PathInAGraph.cs" />
     <Compile Include="HeightOfTree.cs" />
     <Compile Include="ImplementDeque.cs" />
     <Compile Include="ImplementQueue.cs" />
     <Compile Include="InterleaveModified.cs" />
     <Compile Include="ISolution.cs" />
-    <Compile Include="IsCheckPowerOf2.cs" />
+    <Compile Include="BitsManipulation\IsCheckPowerOf2.cs" />
     <Compile Include="LargestConcatinatedNumber.cs" />
+    <Compile Include="RotationOfMatrices.cs" />
+    <Compile Include="Sorting\SelectionSortAdhoc.cs" />
     <Compile Include="Stacks\StockSpan.cs" />
     <Compile Include="Strings\LargestPalindromicSubstringHard.cs" />
     <Compile Include="Trees\BottomsUpLevelOrder.cs" />
@@ -103,12 +115,16 @@
     <Compile Include="Trees\IsCompleteBinaryTree.cs" />
     <Compile Include="Trees\IsFullBinaryTree.cs" />
     <Compile Include="Trees\LeftView.cs" />
+    <Compile Include="Trees\NumberOfBSTs.cs" />
+    <Compile Include="Trees\PreOrderInOrderToPostOrder.cs" />
     <Compile Include="Trees\RightView.cs" />
+    <Compile Include="Trees\SumOfNumbersFromRootToLeaf.cs" />
     <Compile Include="Trees\VerticalOrderOfTree.cs" />
     <Compile Include="Trees\ZigZagBottomUpTraversal.cs" />
     <Compile Include="Trees\ZigZagLevelOrder.cs" />
-    <Compile Include="TreeTraversals.cs" />
-    <Compile Include="TwoSetBits.cs" />
+    <Compile Include="Trees\TreeTraversals.cs" />
+    <Compile Include="BitsManipulation\TwoSetBits.cs" />
+    <Compile Include="Tries\MaximumXOR.cs" />
     <Compile Include="WordsVowelsConsonants.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -49,9 +49,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Codechef\Codechef.csproj">
+      <Project>{153125a7-a733-44bc-aa5c-501c7a44f870}</Project>
+      <Name>Codechef</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Codeforces\Codeforces.csproj">
       <Project>{b3660a4d-2433-4a5c-a336-10840661b315}</Project>
       <Name>Codeforces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datastructures\Datastructures.csproj">
+      <Project>{e84f9f9b-5296-4d5e-aef1-0f919e447025}</Project>
+      <Name>Datastructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hackerank\Hackerank.csproj">
+      <Project>{d10c15f6-7c63-4bcd-8c83-f12d59b1762c}</Project>
+      <Name>Hackerank</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hackerearth\Hackerearth.csproj">
       <Project>{532f892b-3ffb-486a-a86a-87fa1f51797f}</Project>

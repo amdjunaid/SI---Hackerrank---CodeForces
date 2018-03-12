@@ -28,3 +28,7 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\obj\Debug\Runner.pdb
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Datastructures.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Datastructures.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Hackerank.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Hackerank.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Codechef.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Codechef.pdb

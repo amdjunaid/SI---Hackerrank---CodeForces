@@ -1,0 +1,8 @@
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\bin\Debug\Hackerank.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\bin\Debug\Hackerank.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\bin\Debug\Datastructures.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\bin\Debug\Datastructures.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\obj\Debug\Hackerank.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\obj\Debug\Hackerank.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\obj\Debug\Hackerank.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerank\obj\Debug\Hackerank.pdb

@@ -9,6 +9,7 @@ namespace SmartInterviewsBatch_6
     public abstract class ISolution
     {
         public static Func<int> ReadInt = () => int.Parse(Console.ReadLine().Trim());
+        public static Func<long> ReadLong = () => long.Parse(Console.ReadLine().Trim());
         public static Func<short> ReadShort = () => short.Parse(Console.ReadLine().Trim());
         public static Func<string> ReadString = () => Console.ReadLine().Trim();
         public static Func<byte> ReadByte = () => byte.Parse(Console.ReadLine().Trim());

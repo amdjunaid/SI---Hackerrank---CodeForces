@@ -4,3 +4,9 @@ C:\Users\jappapule\source\repos\SI\Hackerearth\bin\Debug\Hackerearth.dll
 C:\Users\jappapule\source\repos\SI\Hackerearth\bin\Debug\Hackerearth.pdb
 C:\Users\jappapule\source\repos\SI\Hackerearth\obj\Debug\Hackerearth.dll
 C:\Users\jappapule\source\repos\SI\Hackerearth\obj\Debug\Hackerearth.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\bin\Debug\Hackerearth.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\bin\Debug\Hackerearth.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.pdb

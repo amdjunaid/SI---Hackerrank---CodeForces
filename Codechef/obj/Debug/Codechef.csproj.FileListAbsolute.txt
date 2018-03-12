@@ -1,0 +1,6 @@
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\bin\Debug\Codechef.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\bin\Debug\Codechef.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.pdb

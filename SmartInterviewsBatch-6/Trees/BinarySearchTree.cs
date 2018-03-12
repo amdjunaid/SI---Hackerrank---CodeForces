@@ -21,6 +21,7 @@ namespace SmartInterviewsBatch_6
             {
                 this.data = data;
                 left = right = null;
+                height = int.MinValue;
             }
 
             public Node()
@@ -106,6 +107,7 @@ namespace SmartInterviewsBatch_6
             {
                 root.left = Insert(root.left, data);
             }
+            root.height = Height(root);
             return root;
         }
 

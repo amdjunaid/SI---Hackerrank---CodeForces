@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\AddOneToNumber.cs" />
+    <Compile Include="Arrays\IntersectionOfSortedArrays.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
     <Compile Include="Arrays\MaxNonNegativeSubArray.cs" />
     <Compile Include="Arrays\MinStepsInfiniteGrid.cs" />
@@ -48,6 +50,7 @@
     <Compile Include="Arrays\RepeatAndMissingNumber.cs" />
     <Compile Include="Arrays\SpiralOrderMatrix.cs" />
     <Compile Include="Arrays\WaveArray.cs" />
+    <Compile Include="Backtracking\Subsets2.cs" />
     <Compile Include="Bitwise\DifferentBitSumPairwise.cs" />
     <Compile Include="Bitwise\NumberOf1Bits.cs" />
     <Compile Include="Bitwise\ReverseBits.cs" />
@@ -58,6 +61,8 @@
     <Compile Include="Search\AllocateBooks.cs" />
     <Compile Include="Search\PaintersPartitionProblem.cs" />
     <Compile Include="Search\SquareRootNumber.cs" />
+    <Compile Include="Trees\InOrderTraversal.cs" />
+    <Compile Include="Trees\PostOrder.cs" />
     <Compile Include="Trees\PreOrderTraversal.cs" />
     <Compile Include="Trees\TreeNode.cs" />
   </ItemGroup>

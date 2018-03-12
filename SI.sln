@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewBit", "InterviewBi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datastructures", "Datastructures\Datastructures.csproj", "{E84F9F9B-5296-4D5E-AEF1-0F919E447025}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerank", "Hackerank\Hackerank.csproj", "{D10C15F6-7C63-4BCD-8C83-F12D59B1762C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codechef", "Codechef\Codechef.csproj", "{153125A7-A733-44BC-AA5C-501C7A44F870}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{E84F9F9B-5296-4D5E-AEF1-0F919E447025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E84F9F9B-5296-4D5E-AEF1-0F919E447025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E84F9F9B-5296-4D5E-AEF1-0F919E447025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10C15F6-7C63-4BCD-8C83-F12D59B1762C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10C15F6-7C63-4BCD-8C83-F12D59B1762C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10C15F6-7C63-4BCD-8C83-F12D59B1762C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10C15F6-7C63-4BCD-8C83-F12D59B1762C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153125A7-A733-44BC-AA5C-501C7A44F870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153125A7-A733-44BC-AA5C-501C7A44F870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153125A7-A733-44BC-AA5C-501C7A44F870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153125A7-A733-44BC-AA5C-501C7A44F870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
