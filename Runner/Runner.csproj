@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\A20J\A20J.csproj">
+      <Project>{af9d49fd-fb44-461c-ac92-069f53ffa871}</Project>
+      <Name>A20J</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Codechef\Codechef.csproj">
       <Project>{153125a7-a733-44bc-aa5c-501c7a44f870}</Project>
       <Name>Codechef</Name>

@@ -32,3 +32,5 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Hackerank.pdb
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Codechef.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\Codechef.pdb
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\A20J.dll
+C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Runner\bin\Debug\A20J.pdb

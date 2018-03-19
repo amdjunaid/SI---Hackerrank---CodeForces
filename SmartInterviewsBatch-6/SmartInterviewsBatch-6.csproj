@@ -53,6 +53,14 @@
     <Compile Include="6c\RangeQueries.cs" />
     <Compile Include="BitsManipulation\BinaryRepresentation.cs" />
     <Compile Include="6a\CheckIfPalindrome.cs" />
+    <Compile Include="Contests\CheckSubsequence.cs" />
+    <Compile Include="Contests\ConvertingAnagrams.cs" />
+    <Compile Include="Contests\FareWellParty.cs" />
+    <Compile Include="Contests\MaximumSetBits.cs" />
+    <Compile Include="Contests\RangeSumSubarrays.cs" />
+    <Compile Include="Contests\RoboticExhibition.cs" />
+    <Compile Include="Contests\SumAndXOR.cs" />
+    <Compile Include="Contests\SumOf2Numbers.cs" />
     <Compile Include="Trees\BinarySearchTree.cs" />
     <Compile Include="BitsManipulation\TwoSetBitModified.cs" />
     <Compile Include="ChangingDirectories.cs" />

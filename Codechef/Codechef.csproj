@@ -44,7 +44,10 @@
     <Compile Include="Contests\MarchChallenge2018\ChefAndEasyProblem.cs" />
     <Compile Include="Contests\MarchChallenge2018\ChefAndGlove.cs" />
     <Compile Include="Contests\MarchChallenge2018\MinionChefAndBananas.cs" />
+    <Compile Include="Contests\MarchChallenge2018\MinVotes.cs" />
     <Compile Include="Contests\MarchChallenge2018\MixTheColors.cs" />
+    <Compile Include="Contests\MarchCookOff2018\ChefGoesToCinema.cs" />
+    <Compile Include="Contests\MarchCookOff2018\ChefRestoresAMatrix.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
