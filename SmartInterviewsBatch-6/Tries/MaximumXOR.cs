@@ -33,26 +33,30 @@ namespace SmartInterviewsBatch_6.Tries
             {
                 ans = Math.Max(ans, GetMaximumPossibleNumber(arr[i], root));
             }
-            return  ans;
+            return ans;
         }
 
         private int GetMaximumPossibleNumber(int n, Trie<byte> root)
         {
-            int maxPossible = 0;
+            int bestAvailablePair = 0;
             var rootNode = root.root;
             for (int i = 20; i >= 0; i--)
             {
-                byte ithBitToSearchFor = (byte)((n & (1 << i)) != 0 ? 0 : 1);
-                if (rootNode.children.ContainsKey(ithBitToSearchFor))
+                byte ithBitOfN = (byte)((n & (1 << i)) != 0 ? 1 : 0);
+                // if ithBit is set, it searches for unset bit child and updates root, else, the other child.
+                // if ithBit is unset, it searches for set bit child and updates the pair value and updates root with set bit child, else the other child.
+                if (rootNode.children.ContainsKey((byte)(ithBitOfN ^ 1)))
                 {
-                    maxPossible |= 1 << i;
+                    bestAvailablePair |= (1 ^ ithBitOfN) << i;
+                    rootNode = rootNode.children[(byte)(ithBitOfN ^ 1)];
                 }
                 else
                 {
-                    rootNode = rootNode.children[(byte)(ithBitToSearchFor ^ 1)];
+                    bestAvailablePair |= ithBitOfN << i;
+                    rootNode = rootNode.children[ithBitOfN];
                 }
             }
-            return 0;
+            return bestAvailablePair ^ n;
         }
 
         private byte[] GetBinaryRep(int n)
@@ -60,7 +64,7 @@ namespace SmartInterviewsBatch_6.Tries
             byte[] binaryRep = new byte[21];
             for (int j = 20; j >= 0; j--)
             {
-                binaryRep[20 - j] = (byte)(n & (1 << j));
+                binaryRep[20 - j] = (byte)((n & (1 << j)) != 0 ? 1 : 0);
             }
             return binaryRep;
         }

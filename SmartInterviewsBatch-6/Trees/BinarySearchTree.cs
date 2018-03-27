@@ -21,7 +21,7 @@ namespace SmartInterviewsBatch_6
             {
                 this.data = data;
                 left = right = null;
-                height = int.MinValue;
+                height = 0;
             }
 
             public Node()
@@ -107,7 +107,7 @@ namespace SmartInterviewsBatch_6
             {
                 root.left = Insert(root.left, data);
             }
-            root.height = Height(root);
+            root.height = Math.Max(height(root.left), height(root.right)) + 1;
             return root;
         }
 
@@ -151,6 +151,13 @@ namespace SmartInterviewsBatch_6
             int maxHeight = Math.Max(Height(root.left), Height(root.right));
             root.height = maxHeight == -1 ? 0 : maxHeight;
             return root.height + 1;
+        }
+
+        public int height(Node root)
+        {
+            if (root == null)
+                return -1;
+            return root.height;
         }
 
         public bool IsBalancedBST(Node root)

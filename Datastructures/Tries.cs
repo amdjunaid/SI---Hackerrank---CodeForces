@@ -17,12 +17,13 @@ namespace Datastructures
         public class TrieNode
         {
             public T character;
+            public int remainingLengthOfMaxElement;
             public int prefixes;
             public bool isLeaf;
             public Dictionary<T, TrieNode> children = null;
             public TrieNode(T c)
             {
-                prefixes = 0;
+                prefixes = remainingLengthOfMaxElement = 0;
                 isLeaf = false;
                 character = c;
                 children = new Dictionary<T, TrieNode>();
@@ -41,11 +42,52 @@ namespace Datastructures
                 {
                     node = new TrieNode(c);
                     node.prefixes += 1;
+                    if (node.remainingLengthOfMaxElement < i)
+                    {
+                        node.remainingLengthOfMaxElement = i;
+                    }
                     rootNode.children.Add(c, node);
                 }
                 else
                 {
                     node.prefixes += 1;
+                    // custom logic
+                    //if ((node.prefixes > 1 && node.isLeaf) | (node.prefixes > 1 && i == (word.Length - 1)))
+                    //{
+                    //    badSet = true;
+                    //    break;
+                    //}
+                }
+                rootNode = node;
+            }
+            rootNode.isLeaf = true;
+        }
+
+        public void InsertRhyme(T[] word)
+        {
+            TrieNode rootNode = root;
+            for (int i = word.Length-1; i >=0; i--)
+            {
+                TrieNode node;
+                var c = word[i];
+                //char c = Convert.ToChar(word[i]);
+                if (!rootNode.children.TryGetValue(c, out node))
+                {
+                    node = new TrieNode(c);
+                    node.prefixes += 1;
+                    if (node.remainingLengthOfMaxElement < i)
+                    {
+                        node.remainingLengthOfMaxElement = i;
+                    }
+                    rootNode.children.Add(c, node);
+                }
+                else
+                {
+                    node.prefixes += 1;
+                    if (node.remainingLengthOfMaxElement < i)
+                    {
+                        node.remainingLengthOfMaxElement = i;
+                    }
                     // custom logic
                     //if ((node.prefixes > 1 && node.isLeaf) | (node.prefixes > 1 && i == (word.Length - 1)))
                     //{

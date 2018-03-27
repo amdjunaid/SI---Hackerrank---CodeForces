@@ -26,6 +26,7 @@ using Codechef.Contests.MarchChallenge2018;
 using A20J.Ladders._11;
 using System.Collections.Generic;
 using Codechef.Contests.MarchCookOff2018;
+using SmartInterviewsBatch_6.Tries;
 
 namespace Runner
 {
@@ -33,7 +34,7 @@ namespace Runner
     {
         static void Main(string[] args)
         {
-            new ChefRestoresAMatrix().Solve();
+            new DiameterOfTree().Solve();
             Console.ReadLine();
         }
     }

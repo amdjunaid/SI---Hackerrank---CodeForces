@@ -61,6 +61,7 @@
     <Compile Include="Contests\RoboticExhibition.cs" />
     <Compile Include="Contests\SumAndXOR.cs" />
     <Compile Include="Contests\SumOf2Numbers.cs" />
+    <Compile Include="KillingDragons.cs" />
     <Compile Include="Trees\BinarySearchTree.cs" />
     <Compile Include="BitsManipulation\TwoSetBitModified.cs" />
     <Compile Include="ChangingDirectories.cs" />
@@ -101,6 +102,8 @@
     <Compile Include="Stacks\StockSpan.cs" />
     <Compile Include="Strings\LargestPalindromicSubstringHard.cs" />
     <Compile Include="Trees\BottomsUpLevelOrder.cs" />
+    <Compile Include="Trees\DiameterOfTree.cs" />
+    <Compile Include="Trees\LeastCommonAncestor.cs" />
     <Compile Include="Trees\LevelOrderOfTree.cs" />
     <Compile Include="MaximumContiguousSubsequence.cs" />
     <Compile Include="6a\MaxNoOfSetBits.cs" />
@@ -133,6 +136,7 @@
     <Compile Include="Trees\TreeTraversals.cs" />
     <Compile Include="BitsManipulation\TwoSetBits.cs" />
     <Compile Include="Tries\MaximumXOR.cs" />
+    <Compile Include="Tries\Rhymes.cs" />
     <Compile Include="WordsVowelsConsonants.cs" />
   </ItemGroup>
   <ItemGroup>
