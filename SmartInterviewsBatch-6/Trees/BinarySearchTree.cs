@@ -153,7 +153,7 @@ namespace SmartInterviewsBatch_6
             return root.height + 1;
         }
 
-        public int height(Node root)
+        public static int height(Node root)
         {
             if (root == null)
                 return -1;

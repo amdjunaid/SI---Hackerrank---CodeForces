@@ -23,62 +23,37 @@ namespace SmartInterviewsBatch_6
 
         private int FirstDungeon(short[] energyToKill, short[] energyInBowl)
         {
-            int[] energyRemaining = new int[energyInBowl.Length];
-            bool dearthExists = false;
-            energyRemaining[0] = energyInBowl[0] - energyToKill[0];
-            int sumBowl = energyInBowl[0], sumDragon = energyToKill[0], maximumDearthValue = energyRemaining[0], maximumDearthIndex = 0;
-            for (int i = 1; i < energyInBowl.Length; i++)
-            {
-                sumBowl += energyInBowl[i];
-                sumDragon += energyToKill[i];
-                int currentRemainingEnergy = energyInBowl[i] - energyToKill[i];
-                energyRemaining[i] = energyRemaining[i - 1] + currentRemainingEnergy;
-                if (energyRemaining[i] < 0) {
-                    dearthExists = true;
-                }
-                if (currentRemainingEnergy < 0)
-                {
-                    if (currentRemainingEnergy < maximumDearthValue)
-                    {
-                        maximumDearthValue = currentRemainingEnergy;
-                        maximumDearthIndex = i;
-                    }
-                }
+            if (energyInBowl.Length == 1) {
+                if (energyInBowl[0] < energyToKill[0])
+                    return -1;
+                else
+                    return 1;
             }
-            if (!dearthExists) {
-                return 1;
-            }
-            if (sumBowl < sumDragon)
-                return -1;
-            int maximumOccuringPositive = 0, maximumOccuringPositiveIndex = maximumDearthIndex;
-            for (int i = maximumDearthIndex; i < energyInBowl.Length; i++)
+            int startPt = 0, initialStartingPt = 0, i = 0, remainingEnergy = 0, noOfDungeons = energyToKill.Length;
+            while (!((startPt == 0 && ((i % noOfDungeons) == noOfDungeons - 1)) || (((i % noOfDungeons) < startPt) && (startPt - (i % noOfDungeons) == 1))))
             {
-                if (energyInBowl[i] - energyToKill[i] > maximumOccuringPositive)
-                {
-                    maximumOccuringPositive = energyInBowl[i] - energyToKill[i];
-                    maximumOccuringPositiveIndex = i;
-                }
-            }
-            energyRemaining[maximumOccuringPositiveIndex] = maximumOccuringPositive;
-            for (int i = maximumOccuringPositiveIndex + 1; i < energyInBowl.Length; i++)
-            {
-                energyRemaining[i] = energyRemaining[i - 1] + energyInBowl[i] - energyToKill[i];
-            }
-            energyRemaining[0] = energyRemaining[energyRemaining.Length - 1] + energyInBowl[0] - energyToKill[0];
-            for (int i = 1; i < maximumOccuringPositiveIndex; i++)
-            {
-                energyRemaining[i] = energyRemaining[i - 1] + energyInBowl[i] - energyToKill[i];
-            }
-            bool flag = true;
-            for (int i = 0; i < energyRemaining.Length; i++)
-            {
-                if (energyRemaining[i] < 0)
-                {
-                    flag = false;
+                if (i / noOfDungeons > 2) {
                     break;
                 }
+                remainingEnergy += energyInBowl[i % noOfDungeons] - energyToKill[i % noOfDungeons];
+                if (remainingEnergy < 0)
+                {
+                    startPt = (i + 1) % noOfDungeons;
+                    remainingEnergy = 0;
+                    if (initialStartingPt == 0 && (i / noOfDungeons == 0))
+                    {
+                        initialStartingPt = (i + 1) % noOfDungeons;
+                    }
+                }
+                i++;
+                if ((startPt == 0 && ((i % noOfDungeons) == noOfDungeons - 1)) || (((i % noOfDungeons) < startPt) && (startPt - (i % noOfDungeons) == 1)))
+                {
+                    remainingEnergy += energyInBowl[i%noOfDungeons] - energyToKill[i%noOfDungeons];
+                }
             }
-            return flag ? (maximumOccuringPositiveIndex + 1) : -1;
+            if (remainingEnergy < 0)
+                return -1;
+            return startPt + 1;
         }
     }
 }

@@ -27,6 +27,10 @@ using A20J.Ladders._11;
 using System.Collections.Generic;
 using Codechef.Contests.MarchCookOff2018;
 using SmartInterviewsBatch_6.Tries;
+using SmartInterviewsBatch_6.Searching;
+using SmartInterviewsBatch_6.Arrays;
+using SmartInterviewsBatch_6.Contests.CodeGladiators;
+using SmartInterviewsBatch_6.Heaps;
 
 namespace Runner
 {
@@ -34,7 +38,7 @@ namespace Runner
     {
         static void Main(string[] args)
         {
-            new DiameterOfTree().Solve();
+            new RubyAvinash().Solve();
             Console.ReadLine();
         }
     }
