@@ -31,6 +31,8 @@ using SmartInterviewsBatch_6.Searching;
 using SmartInterviewsBatch_6.Arrays;
 using SmartInterviewsBatch_6.Contests.CodeGladiators;
 using SmartInterviewsBatch_6.Heaps;
+using SmartInterviewsBatch_6.Contests.CodeGladiators.Practise;
+using Codeforces.Div2.Round476;
 
 namespace Runner
 {
@@ -38,7 +40,8 @@ namespace Runner
     {
         static void Main(string[] args)
         {
-            new RubyAvinash().Solve();
+            Console.WriteLine(2<<3);
+            //new PaperAirplanes().Solve();
             Console.ReadLine();
         }
     }

@@ -59,6 +59,7 @@
     <Compile Include="Div2\Round468\FriendsMeeting.cs" />
     <Compile Include="Div2\Round468\WorldCup.cs" />
     <Compile Include="Div2\Round468\WorldCupModified.cs" />
+    <Compile Include="Div2\Round476\PaperAirplanes.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

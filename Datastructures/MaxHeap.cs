@@ -6,32 +6,37 @@ using System.Threading.Tasks;
 
 namespace Datastructures
 {
-    public class MinHeap<T>
+    public class MaxHeap<T>
     {
         T[] arr;
         int idx, size;
-        public MinHeap(int size) {
+        public MaxHeap(int size)
+        {
             arr = new T[size + 1];
             idx = 0;
             this.size = size + 1;
         }
 
-        public void Insert(T key) {
+        public void Insert(T key)
+        {
             if (IsFull())
                 return;
             arr[++idx] = key;
             HeapifyFromBottom();
         }
 
-        public T GetMin() {
+        public T GetMax()
+        {
             return arr[1];
         }
 
-        public int Size() {
+        public int Size()
+        {
             return idx;
         }
 
-        public void DelMin() {
+        public void DelMax()
+        {
             if (IsEmpty())
                 return;
             arr[1] = arr[idx--];
@@ -44,12 +49,12 @@ namespace Datastructures
             while (i <= idx)
             {
                 //var min = typeof(T).GetProperties().First(x => x.Name.Contains("MaxValue")).GetValue(typeof(T));
-                T min = default(T);
-                int minIdx = 0;
+                T max = default(T);
+                int maxIdx = 0;
                 if (2 * i <= idx)
                 {
-                    min = arr[2 * i];
-                    minIdx = 2 * i;
+                    max = arr[2 * i];
+                    maxIdx = 2 * i;
                 }
                 else
                 {
@@ -57,32 +62,34 @@ namespace Datastructures
                 }
                 if (2 * i + 1 <= idx)
                 {
-                    if (Comparer<T>.Default.Compare(min, arr[2 * i + 1]) > 0)
+                    if (Comparer<T>.Default.Compare(max, arr[2 * i + 1]) < 0)
                     {
-                        min = arr[2 * i + 1];
-                        minIdx = 2 * i + 1;
+                        max = arr[2 * i + 1];
+                        maxIdx = 2 * i + 1;
                     }
                 }
-                if (Comparer<T>.Default.Compare(min, arr[i]) < 0)
+                if (Comparer<T>.Default.Compare(max, arr[i]) > 0)
                 {
                     var temp = arr[i];
-                    arr[i] = arr[minIdx];
-                    arr[minIdx] = temp;
-                    i = minIdx;
+                    arr[i] = arr[maxIdx];
+                    arr[maxIdx] = temp;
+                    i = maxIdx;
                 }
                 else
                     break;
             }
         }
 
-        public bool IsEmpty() {
+        public bool IsEmpty()
+        {
             return idx == 0;
         }
 
         private void HeapifyFromBottom()
         {
             int i = idx;
-            while (i > 1 && Comparer<T>.Default.Compare(arr[i], arr[i / 2]) < 0) {
+            while (i > 1 && Comparer<T>.Default.Compare(arr[i], arr[i / 2]) > 0)
+            {
                 var temp = arr[i / 2];
                 arr[i / 2] = arr[i];
                 arr[i] = temp;
@@ -90,7 +97,8 @@ namespace Datastructures
             }
         }
 
-        public bool IsFull() {
+        public bool IsFull()
+        {
             return idx == size;
         }
     }
