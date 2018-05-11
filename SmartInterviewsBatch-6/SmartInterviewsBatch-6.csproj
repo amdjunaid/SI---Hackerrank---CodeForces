@@ -61,6 +61,9 @@
     <Compile Include="Contests\CodeGladiators\rUBYhEMANTH.cs" />
     <Compile Include="Contests\CodeGladiators\RubyModified.cs" />
     <Compile Include="Contests\CodeGladiators\RubyTheNecklace.cs" />
+    <Compile Include="Contests\CodeGladiators\SemiFinals\BenTheBear.cs" />
+    <Compile Include="Contests\CodeGladiators\SemiFinals\BobHemanth.cs" />
+    <Compile Include="Contests\CodeGladiators\SemiFinals\TempBobJunaid.cs" />
     <Compile Include="Contests\ConvertingAnagrams.cs" />
     <Compile Include="Contests\FareWellParty.cs" />
     <Compile Include="Contests\MaximumSetBits.cs" />

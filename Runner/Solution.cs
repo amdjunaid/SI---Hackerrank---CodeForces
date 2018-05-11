@@ -33,6 +33,7 @@ using SmartInterviewsBatch_6.Contests.CodeGladiators;
 using SmartInterviewsBatch_6.Heaps;
 using SmartInterviewsBatch_6.Contests.CodeGladiators.Practise;
 using Codeforces.Div2.Round476;
+using SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals;
 
 namespace Runner
 {
@@ -40,8 +41,10 @@ namespace Runner
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(2<<3);
-            //new PaperAirplanes().Solve();
+            //int x = (int)2e9;
+            //Console.WriteLine(x);
+            new TempBobJunaid().Solve();
+            //SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals.CodeGladiators.BobHemanth.theRevenant();
             Console.ReadLine();
         }
     }
