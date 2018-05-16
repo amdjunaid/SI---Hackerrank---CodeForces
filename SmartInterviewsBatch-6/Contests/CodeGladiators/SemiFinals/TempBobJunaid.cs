@@ -89,7 +89,7 @@ namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
                 int cost = 0,maxOverlappingId = 0;
                 var enumerater = salmonsArr[i].overlappingLi.GetEnumerator();
                 var isCostAdded = false;
-                while (enumerater.MoveNext()) {
+                while (enumerater.MoveNext())  {
                     if (enumerater.Current != i) {
                         if (cost < salmonsArr[enumerater.Current].maxCost)
                         {
