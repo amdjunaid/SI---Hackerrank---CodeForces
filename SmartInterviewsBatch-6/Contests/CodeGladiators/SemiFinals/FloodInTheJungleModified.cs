@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
 {
-    public class FloodInTheJungle : ISolution
+    public class FloodInTheJungleModified : ISolution
     {
         class Node
         {
-            public int ArtiVertex { get; set; }
+            public int Id { get; set; }
+            public int InVertex { get; set; }
+            public int OutVertex { get; set; }
             public int MonkeyCnt { get; set; }
             public double X { get; set; }
             public double Y { get; set; }
@@ -19,98 +21,73 @@ namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
 
         public static int V = 0;
         public static int[,] twodGraph = null;
-        public static Dictionary<int, int> map;
         static Node[] graph = null;
         public override void Solve()
         {
-            map = new Dictionary<int, int>();
-            Dictionary<int, int> capacity = new Dictionary<int, int>();
             //var NandC = ReadArrString().Select(int.Parse).ToArray();
             var NandC1 = ReadArrString();
             var NandC = new int[1];
             NandC[0] = int.Parse(NandC1[0]);
-            //V = NandC[0] * 2 + 2;
-            V = NandC[0] * 2 + 2 + NandC[0];
+            V = NandC[0] * 2 + 2;
             graph = new Node[NandC[0]];
-            //twodGraph = new int[NandC[0] * 2 + 2, NandC[0] * 2 + 2];
-            twodGraph = new int[NandC[0] * 2 + 2 + NandC[0], NandC[0] * 2 + 2 + NandC[0]];
-            var computedGraph = new bool[NandC[0], NandC[0]];
+            twodGraph = new int[NandC[0] * 2 + 2, NandC[0] * 2 + 2];
             int totalMonkeyCnt = 0, nonZeroMonkeyTrees = 0, invalidTrees = 0;
             for (int i = 0; i < NandC[0]; i++)
             {
                 var info = ReadArrString().Select(int.Parse).ToArray();
                 totalMonkeyCnt += info[2];
-                if (info[2] > 0)
+                if (info[3] > 0)
                 {
                     nonZeroMonkeyTrees++;
                 }
                 if (info[2] > info[3])
+                {
                     invalidTrees++;
+                }
                 graph[i] = new Node
                 {
-
+                    Id = i,
                     X = info[0],
                     Y = info[1],
+                    OutVertex = i,
                     MonkeyCnt = info[2],
                     Threshold = info[3]
                 };
             }
-            int index = 0;
-            for (int i = 0; i < NandC[0]; i++)
+            if (invalidTrees > 1)
             {
-                for (int j = 0; j < NandC[0]; j++)
+                Console.Write(-1);
+            }
+            else
+            {
+                for (int i = 0; i < NandC[0]; i++)
                 {
-                    if (i != j)
+                    for (int j = 0; j < NandC[0]; j++)
                     {
-                        double ydist = Math.Abs(graph[j].Y - graph[i].Y);
-                        ydist *= ydist;
-                        double xdist = Math.Abs(graph[j].X - graph[i].X);
-                        xdist *= xdist;
-                        double dist = Math.Sqrt(ydist + xdist);
-                        //out vertex to out vertex
-                        //if (dist <= Convert.ToDouble(NandC1[1]))
-                        if (dist <= Convert.ToDouble(NandC1[1]) && (!computedGraph[i, j] || !computedGraph[j, i]))
+                        if (i != j)
                         {
-                            int ArtiVertexJ = 0, ArtiVertexI = i;
-                            if (map.ContainsKey(i))
+                            double ydist = Math.Abs(graph[j].Y - graph[i].Y);
+                            ydist *= ydist;
+                            double xdist = Math.Abs(graph[j].X - graph[i].X);
+                            xdist *= xdist;
+                            double dist = Math.Sqrt(ydist + xdist);
+                            //out vertex to out vertex
+                            if (dist <= Convert.ToDouble(NandC1[1]))
                             {
-                                ArtiVertexI = map[i];
-                                twodGraph[ArtiVertexI, j] = capacity[ArtiVertexI];
+                                twodGraph[i, j] = graph[i].Threshold;
+                                //twodGraph[j, i] = graph[j].Threshold;
                             }
-                            else
-                            {
-                                twodGraph[ArtiVertexI, j] = graph[ArtiVertexI].Threshold;
-                            }
-
-                            if (map.ContainsKey(j))
-                            {
-                                ArtiVertexJ = map[j];
-                            }
-                            else
-                            {
-                                ArtiVertexJ = NandC[0] * 2 + 2 + index;
-                                map.Add(j, ArtiVertexJ);
-                                capacity.Add(ArtiVertexJ, graph[j].Threshold);
-                                index++;
-                            }
-
-                            //twodGraph[ArtiVertexI, j] = graph[i].Threshold;
-                            //twodGraph[j, i] = graph[j].Threshold;
-
-                            twodGraph[j, ArtiVertexJ] = graph[j].Threshold;
-                            twodGraph[ArtiVertexJ, ArtiVertexI] = graph[j].Threshold;
-                            computedGraph[i, j] = computedGraph[j, i] = true;
                         }
                     }
+                    //in vertex to out vertex
+                    twodGraph[NandC[0] + i, i] = graph[i].MonkeyCnt;
+                    //super source node to every in vertex
+                    twodGraph[NandC[0] * 2, NandC[0] + i] = int.MaxValue;
                 }
-                //in vertex to out vertex
-                twodGraph[NandC[0] + i, i] = graph[i].MonkeyCnt;
-                //super source node to every in vertex
-                twodGraph[NandC[0] * 2, NandC[0] + i] = int.MaxValue;
-            }
 
-            Check(NandC[0], totalMonkeyCnt);
-            Console.Write(output);
+                Check(NandC[0], totalMonkeyCnt);
+                Console.Write(output);
+            }
         }
 
         private void Check(int N, int totalMonkeyCnt)
@@ -119,9 +96,7 @@ namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
             //end point
             for (int i = 0; i < N; i++)
             {
-                // create a super sink with infinite capacity
-                twodGraph[map.ContainsKey(i) ? map[i] : i, N * 2 + 1] = int.MaxValue;
-                // check from super source to super sink
+                twodGraph[i, N * 2 + 1] = int.MaxValue;
                 int maxCost = fordFulkerson(twodGraph, N * 2, N * 2 + 1);
                 if (totalMonkeyCnt == maxCost)
                 {
@@ -133,9 +108,7 @@ namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
                     else
                         output.Append(i + " ");
                 }
-
-                // set the capacity of super sink to 0 so that you can change the super sink
-                twodGraph[map.ContainsKey(i) ? map[i] : i, N * 2 + 1] = 0;
+                twodGraph[i, N * 2 + 1] = 0;
             }
             if (totalMeetingPts == 0)
                 output.Append("-1");
@@ -211,10 +184,11 @@ namespace SmartInterviewsBatch_6.Contests.CodeGladiators.SemiFinals
                 for (v = t; v != s; v = parent[v])
                 {
                     u = parent[v];
-
-                    //rGraph[u, v] -= path_flow;
-                    for (int x = 0; x < V; x++) {
-                        rGraph[u, x] -= path_flow;
+                    rGraph[u, v] -= path_flow;
+                    for (int i = 0; i < V; i++) {
+                        if (i != parent[u]) {
+                            rGraph[u, i] -= path_flow;
+                        }
                     }
                     rGraph[v, u] += path_flow;
                 }
