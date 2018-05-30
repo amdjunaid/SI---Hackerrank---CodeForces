@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codechef", "Codechef\Codech
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A20J", "A20J\A20J.csproj", "{AF9D49FD-FB44-461C-AC92-069F53FFA871}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techgig", "Techgig\Techgig.csproj", "{4EE6F140-E689-449E-8418-B52217ADE529}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{AF9D49FD-FB44-461C-AC92-069F53FFA871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF9D49FD-FB44-461C-AC92-069F53FFA871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF9D49FD-FB44-461C-AC92-069F53FFA871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE6F140-E689-449E-8418-B52217ADE529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE6F140-E689-449E-8418-B52217ADE529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE6F140-E689-449E-8418-B52217ADE529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE6F140-E689-449E-8418-B52217ADE529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
