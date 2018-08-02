@@ -4,3 +4,8 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Deb
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Codechef\bin\Debug\Codechef.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Codechef\bin\Debug\Codechef.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Codechef\obj\Debug\Codechef.pdb

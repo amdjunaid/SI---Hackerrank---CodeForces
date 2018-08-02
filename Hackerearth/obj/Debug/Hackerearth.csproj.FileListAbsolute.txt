@@ -10,3 +10,9 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\bin\Debug\Hackerearth.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\bin\Debug\Hackerearth.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.csprojAssemblyReference.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Hackerearth\obj\Debug\Hackerearth.pdb

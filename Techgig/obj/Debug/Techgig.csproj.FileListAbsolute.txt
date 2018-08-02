@@ -1,0 +1,6 @@
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\bin\Debug\Techgig.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\bin\Debug\Techgig.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\obj\Debug\Techgig.csprojAssemblyReference.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\obj\Debug\Techgig.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\obj\Debug\Techgig.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\Techgig\obj\Debug\Techgig.pdb

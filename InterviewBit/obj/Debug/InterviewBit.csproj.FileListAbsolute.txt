@@ -4,3 +4,9 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\InterviewBit\obj
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.pdb
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.csprojResolveAssemblyReference.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\bin\Debug\InterviewBit.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\bin\Debug\InterviewBit.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.csprojAssemblyReference.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\InterviewBit\obj\Debug\InterviewBit.pdb

@@ -65,6 +65,10 @@
       <Project>{e84f9f9b-5296-4d5e-aef1-0f919e447025}</Project>
       <Name>Datastructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeekForGeeks\GeekForGeeks.csproj">
+      <Project>{7747d9e4-b9e0-4d41-9807-f4278ac60fff}</Project>
+      <Name>GeekForGeeks</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hackerank\Hackerank.csproj">
       <Project>{d10c15f6-7c63-4bcd-8c83-f12d59b1762c}</Project>
       <Name>Hackerank</Name>
@@ -80,6 +84,10 @@
     <ProjectReference Include="..\SmartInterviewsBatch-6\SmartInterviewsBatch-6.csproj">
       <Project>{91d0aceb-6180-4c7d-92f1-7bf518dfa944}</Project>
       <Name>SmartInterviewsBatch-6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Techgig\Techgig.csproj">
+      <Project>{4ee6f140-e689-449e-8418-b52217ade529}</Project>
+      <Name>Techgig</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

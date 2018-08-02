@@ -46,6 +46,12 @@
     <Compile Include="Ladders\11\3.cs" />
     <Compile Include="Ladders\11\4.cs" />
     <Compile Include="Ladders\11\BeautifulYear.cs" />
+    <Compile Include="Ladders\13\ArrayModified.cs" />
+    <Compile Include="Ladders\13\Arrays.cs" />
+    <Compile Include="Ladders\13\Dubstep.cs" />
+    <Compile Include="Ladders\13\LittleElephantAndChess.cs" />
+    <Compile Include="Ladders\13\MagicNumbers.cs" />
+    <Compile Include="Ladders\13\Permutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Finale2018\Problem1.cs" />
+    <Compile Include="Finale2018\Problem2.cs" />
+    <Compile Include="Practise\FloodFill\Aman.cs" />
+    <Compile Include="Practise\FloodFill\ArthosParthos.cs" />
+    <Compile Include="Practise\FloodFill\MazeGame.cs" />
+    <Compile Include="Practise\ISolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,6 @@
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\obj\Debug\GeekForGeeks.csprojAssemblyReference.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\obj\Debug\GeekForGeeks.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\bin\Debug\GeekForGeeks.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\bin\Debug\GeekForGeeks.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\obj\Debug\GeekForGeeks.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\GeekForGeeks\obj\Debug\GeekForGeeks.pdb

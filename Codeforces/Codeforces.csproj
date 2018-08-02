@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Div2\Div465\FifaAndHisCompany.cs" />
     <Compile Include="Div2\Div465\ProblemB.cs" />
+    <Compile Include="Div2\Div489\NatsyaAndGame.cs" />
     <Compile Include="Div2\GoodBye2017\BuggyBot.cs" />
     <Compile Include="Div2\GoodBye2017\CountingCards.cs" />
     <Compile Include="Div2\Hello2018\ChristmasSpruce.cs" />

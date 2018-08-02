@@ -4,3 +4,9 @@ C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\A20J\obj\Debug\A
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.csproj.CoreCompileInputs.cache
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.dll
 C:\Users\jappapule\source\repos\SI\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\bin\Debug\A20J.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\bin\Debug\A20J.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.csproj.CoreCompileInputs.cache
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.dll
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.pdb
+C:\Users\jappapule\Documents\GitHub\SI---Hackerrank---CodeForces\A20J\obj\Debug\A20J.csprojAssemblyReference.cache
